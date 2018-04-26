@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli('66.147.242.186', 'urcscon3_jhirs10', 'coffee1N', 'urcscon3_jhirs10');
+$mysqli = new mysqli('66.147.242.186', 'urcscon3_jhirs10', 'coffee1N', 'urcscon3_idiotv');
 
 if ($mysqli->connect_error) {
     die('Connect Error (' . $mysqli->connect_errno . ') '
