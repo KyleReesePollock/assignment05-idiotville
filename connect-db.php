@@ -18,7 +18,7 @@ $user = 'urcscon3_idiotv';
 
 $pass = 'coffee1N';
 
-$db = 'urcscon3_idiotv';
+$db = 'urcscon3_jhirs10';
 
 
 
