@@ -18,7 +18,7 @@
 
 <h1>Apply for Idiotville</h1>
 
-<form method="post" action="form-processor.php">
+<form method="post" action="apply.php">
 		<label for="name">Name</label>
 		<input type="text" name="name">
 		<br>

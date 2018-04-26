@@ -39,7 +39,7 @@ $per_page = 3;
 
 // figure out the total pages in the database
 
-$query = "SELECT * FROM users";
+$query = "SELECT * FROM urcscon3_survey";
 $result = mysqli_query($connection, $query);
 
 $total_results = mysqli_num_rows($result);
@@ -120,7 +120,7 @@ echo "</p>";
 
 echo "<table border='1' cellpadding='10'>";
 
-echo "<tr> <th>ID</th> <th>First Name</th> <th>Last Name</th> <th></th> <th></th></tr>";
+echo "<tr> <th>ID</th> <th>Name</th> <th>email</th> <th>certification</th> <th>experience</th> <th>skills</th> <th>reason</th> <th>degree</th> <th></th> <th></th></tr>";
 
 
 function mysqli_result($res, $row, $field=0) { 
@@ -129,7 +129,7 @@ function mysqli_result($res, $row, $field=0) {
     return $datarow[$field]; 
 } 
 
-if ($i == $total_results) { break; }
+if ($i == $total_results - 2) { break; }
 // loop through results of database query, displaying them in the table
 
 for ($i = $start; $i < $end; $i++)
@@ -145,9 +145,19 @@ echo "<tr>";
 
 echo '<td>' . mysqli_result($result, $i, 'id') . '</td>';
 
-echo '<td>' . mysqli_result($result, $i, 'firstname') . '</td>';
+echo '<td>' . mysqli_result($result, $i, 'name') . '</td>';
 
-echo '<td>' . mysqli_result($result, $i, 'lastname') . '</td>';
+echo '<td>' . mysqli_result($result, $i, 'email') . '</td>';
+
+echo '<td>' . mysqli_result($result, $i, 'certification') . '</td>';
+
+echo '<td>' . mysqli_result($result, $i, 'experience') . '</td>';
+
+echo '<td>' . mysqli_result($result, $i, 'skills') . '</td>';
+
+echo '<td>' . mysqli_result($result, $i, 'reason') . '</td>';
+
+echo '<td>' . mysqli_result($result, $i, 'degree') . '</td>';
 
 echo '<td><a href="edit.php?id=' . mysqli_result($result, $i, 'id') . '">Edit</a></td>';
 

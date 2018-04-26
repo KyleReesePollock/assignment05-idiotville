@@ -30,7 +30,7 @@ $id = $_GET['id'];
 
 // delete the entry
 
-$result = mysqli_query($connection, "DELETE FROM users WHERE id=$id")
+$result = mysqli_query($connection, "DELETE FROM urcscon3_survey WHERE id=$id")
 
 or die(mysql_error());
 

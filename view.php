@@ -31,7 +31,7 @@ include('connect-db.php');
 
 // get results from database
 
-$query = "SELECT * FROM users";
+$query = "SELECT * FROM urcscon3_survey";
 $result = mysqli_query($connection, $query);
 
 
@@ -45,7 +45,7 @@ echo "<p><b>View All</b> | <a href='view-paginated.php?page=1'>View Paginated</a
 
 echo "<table border='1' cellpadding='10'>";
 
-echo "<tr> <th>ID</th> <th>First Name</th> <th>Last Name</th> <th></th> <th></th></tr>";
+echo "<tr> <th>ID</th> <th>Name</th> <th>email</th> <th>certification</th> <th>experience</th> <th>skills</th> <th>reason</th> <th>degree</th> <th></th> <th></th></tr>";
 
 
 
@@ -61,9 +61,19 @@ echo "<tr>";
 
 echo '<td>' . $row['id'] . '</td>';
 
-echo '<td>' . $row['firstname'] . '</td>';
+echo '<td>' . $row['name'] . '</td>';
 
-echo '<td>' . $row['lastname'] . '</td>';
+echo '<td>' . $row['email'] . '</td>';
+
+echo '<td>' . $row['certification'] . '</td>';
+
+echo '<td>' . $row['experience'] . '</td>';
+
+echo '<td>' . $row['skills'] . '</td>';
+
+echo '<td>' . $row['reason'] . '</td>';
+
+echo '<td>' . $row['degree'] . '</td>';
 
 echo '<td><a href="edit.php?id=' . $row['id'] . '">Edit</a></td>';
 

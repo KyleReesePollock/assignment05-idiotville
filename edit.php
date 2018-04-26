@@ -14,7 +14,7 @@ Allows user to edit specific entry in database
 
 // since this form is used multiple times in this file, I have made it a function that is easily reusable
 
-function renderForm($id, $firstname, $lastname, $error)
+function renderForm($id, $name, $email, $certification, $experience, $skills, $reason, $degree, $error)
 
 {
 
@@ -52,15 +52,46 @@ echo '<div style="padding:4px; border:1px solid red; color:red;">'.$error.'</div
 
 <input type="hidden" name="id" value="<?php echo $id; ?>"/>
 
-<div>
+		<label for="name">Name</label>
+		<input type="text" name="name">
+		<br>
+		<label for="email">Email</label>
+		<input type="text" name="email">
+		<br>
+		<label for="certification">Most Notable Certification</label>
+		<input type="text" name="certification">
+		<br>
+		<label for="experience">Link to GitHub profile</label>
+		<input type="text" name="experience">
+		<br>
+		<label for="skills">Which skills do you possess?</label>
+		<input type="text" name="skills">
+		<br>
 
-<p><strong>ID:</strong> <?php echo $id; ?></p>
-
-<strong>First Name: *</strong> <input type="text" name="firstname" value="<?php echo $firstname; ?>"/><br/>
-
-<strong>Last Name: *</strong> <input type="text" name="lastname" value="<?php echo $lastname; ?>"/><br/>
-
-<p>* Required</p>
+		<fieldset>
+			<legend><h3>What is your reason for applying?</h3></legend>
+				<input type="radio" name="reason" id="support" value="support">
+				<label for="support">Must support a family</label>
+				<input type="radio" name="reason" id="flexibility" value="flexibility">
+				<label for="flexibility">Professional Flexibility</label>
+				<input type="radio" name="reason" id="income" Value="income">
+				<label for="income">Extra-side income</label>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend><h3>What is your highest level of education?</h3></legend>
+				<input type="radio" name="degree" id="PhD" value="PhD">
+				<label for="PhD">PhD</label>
+				<input type="radio" name="degree" id="masters" value="masters">
+				<label for="masters">Masters</label>
+				<input type="radio" name="degree" id="Bachelors" Value="Bachelors">
+				<label for="Bachelors">Bachelors</label>
+				<input type="radio" name="degree" id="Associates" Value="Associates">
+				<label for="Associates">Associates</label>
+				<input type="radio" name="degree" id="High-school" Value="High-school">
+				<label for="High-school">High-school</label>
+		</fieldset>
+		<br><br>
 
 <input type="submit" name="submit" value="Submit">
 
@@ -104,15 +135,25 @@ if (is_numeric($_POST['id']))
 
 $id = $_POST['id'];
 
-$firstname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['firstname']));
+$name = mysqli_real_escape_string($connection, htmlspecialchars($_POST['name']));
 
-$lastname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['lastname']));
+$email = mysqli_real_escape_string($connection, htmlspecialchars($_POST['email']));
+
+$certification = mysqli_real_escape_string($connection, htmlspecialchars($_POST['certification']));
+
+$experience = mysqli_real_escape_string($connection, htmlspecialchars($_POST['experience']));
+
+$skills = mysqli_real_escape_string($connection, htmlspecialchars($_POST['skills']));
+
+$reason = mysqli_real_escape_string($connection, htmlspecialchars($_POST['reason']));
+
+$degree = mysqli_real_escape_string($connection, htmlspecialchars($_POST['degree']));
 
 
 
 // check that firstname/lastname fields are both filled in
 
-if ($firstname == '' || $lastname == '')
+if ($name == '' || $email == '')
 
 {
 
@@ -124,7 +165,7 @@ $error = 'ERROR: Please fill in all required fields!';
 
 //error, display form
 
-renderForm($id, $firstname, $lastname, $error);
+renderForm($id, $name, $email, $certification, $experience, $skills, $reason, $degree, $error);
 
 }
 
@@ -134,7 +175,7 @@ else
 
 // save the data to the database
 
-mysqli_query($connection, "UPDATE users SET firstname='$firstname', lastname='$lastname' WHERE id='$id'")
+mysqli_query($connection, "UPDATE urcscon3_survey SET name='$name', email='$email', certification='$certification', experience='$experience', skills='$skills', reason='$reason', degree='$degree' WHERE id='$id'")
 
 or die(mysql_error());
 
@@ -178,7 +219,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id']) && $_GET['id'] > 0)
 
 $id = $_GET['id'];
 
-$result = mysqli_query($connection, "SELECT * FROM users WHERE id=$id")
+$result = mysqli_query($connection, "SELECT * FROM urcscon3_survey WHERE id=$id")
 
 or die(mysql_error());
 
@@ -196,15 +237,23 @@ if($row)
 
 // get data from db
 
-$firstname = $row['firstname'];
+$name = $row['name'];
 
-$lastname = $row['lastname'];
+$email = $row['email'];
 
+$certification = $row['certification'];
 
+$experience = $row['experience'];
+
+$skills = $row['skills'];
+
+$reason = $row['reason'];
+
+$degree = $row['degree'];
 
 // show form
 
-renderForm($id, $firstname, $lastname, '');
+renderForm($id, $name, $email, $certification, $experience, $skills, $reason, $degree, '');
 
 }
 
