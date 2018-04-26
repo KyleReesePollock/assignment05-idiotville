@@ -1,6 +1,10 @@
 <?php
 	// step 1: create a database connection
-include('connect-db.php');
+	$dbhost = "66.147.242.186";
+	$dbuser = "urcscon3_jhirs10";
+	$dbpass = "coffee1N";
+	$dbname = "urcscon3_jhirs10";
+	$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
 	// you really should escape all strings
 	$name = Trim(stripslashes($_POST['name']));
@@ -12,8 +16,9 @@ include('connect-db.php');
 	$degree = $_POST['degree'];
 	
 	// step2: Perform a Database Query
-	$query = "INSERT INTO urcscon3_survey(name, email, reason, skills, experience, degree, certification) VALUES ('$name', '$email', '$reason', '$skills', $experience', '$degree', '$certification')";
-	$result = mysqli_query($connection, $query);
+mysqli_query($connection, "INSERT urcscon3_survey SET name='$name', email='$email', certification='$certification', experience='$experience', skills='$skills', reason='$reason', degree='$degree'")
+
+or die(mysql_error());
 ?>
 <html>
 	<body>
@@ -21,13 +26,6 @@ include('connect-db.php');
 
 		</header>
 			<div class="container">
-				
-				<?php
-					if ($result) {
-						echo "Success! The query did not error out";
-					} else {
-						die ("Database query failed!");}
- 				?>
 
 			<section>
 				
