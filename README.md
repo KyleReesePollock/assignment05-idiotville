@@ -67,3 +67,5 @@ There will be two tables in the database to capture all the relevant information
 ![alt wireframe](https://github.com/kurthaut/assignment05-idiotville/blob/master/Wireframe.png)
 
 
+### Intended Design
+The wire frame says it all, however, in terms of fonts please choose something that follows with creating a mood that is attractive for our potential employees that we are targeting (attract young, hip collegiate students)
