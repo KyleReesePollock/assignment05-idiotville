@@ -64,6 +64,6 @@ There will be two tables in the database to capture all the relevant information
 ..* Must capture and store the application data. See previous sections for details on what needs to be captured
 
 ### Wireframe for Intended Website 
-![alt wireframe][Wireframe]
+![alt wireframe](https://github.com/kurthaut/assignment05-idiotville/blob/master/Wireframe.png)
 
 
