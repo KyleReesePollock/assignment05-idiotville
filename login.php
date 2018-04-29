@@ -76,15 +76,25 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
  
 <!DOCTYPE html>
 <html lang="en">
+<?php $thisPage="Login"; ?>
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <style type="text/css">
+
         body{ font: 14px sans-serif; }
         .wrapper{ width: 350px; padding: 20px; }
     </style>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <?php
+    include "includes/menu.nav";
+    ?>
+
 </head>
+
 <body>
     <div class="wrapper">
         <h2>Login</h2>
