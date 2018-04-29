@@ -48,6 +48,8 @@
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 
+<a class="button" href="apply.php">Apply Now!</a>
+
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);

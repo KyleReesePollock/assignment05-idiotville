@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<h1>Apply for Idiotville</h1>
+<h2>Apply for Idiotville</h2>
 
 <form method="post" action="form-processor.php">
 		<label for="name">Name</label>
@@ -37,26 +37,48 @@
 
 		<fieldset>
 			<legend><h3>What is your reason for applying?</h3></legend>
-				<input type="radio" name="reason" id="support" value="support">
+
 				<label for="support">Must support a family</label>
-				<input type="radio" name="reason" id="flexibility" value="flexibility">
+				<input type="radio" name="reason" id="support" value="support">
+
+				<br>
+
 				<label for="flexibility">Professional Flexibility</label>
-				<input type="radio" name="reason" id="income" Value="income">
+				<input type="radio" name="reason" id="flexibility" value="flexibility">
+
+				<br>
+
 				<label for="income">Extra-side income</label>
+				<input type="radio" name="reason" id="income" Value="income">
+
 		</fieldset>
+
 		<br>
+
 		<fieldset>
 			<legend><h3>What is your highest level of education?</h3></legend>
-				<input type="radio" name="degree" id="PhD" value="PhD">
+
 				<label for="PhD">PhD</label>
-				<input type="radio" name="degree" id="masters" value="masters">
+				<input type="radio" name="degree" id="PhD" value="PhD">
+
+				<br>
+
 				<label for="masters">Masters</label>
-				<input type="radio" name="degree" id="Bachelors" Value="Bachelors">
+				<input type="radio" name="degree" id="masters" value="masters">
+
+
+				<br>
 				<label for="Bachelors">Bachelors</label>
-				<input type="radio" name="degree" id="Associates" Value="Associates">
+				<input type="radio" name="degree" id="Bachelors" Value="Bachelors">
+
+				<br>
 				<label for="Associates">Associates</label>
-				<input type="radio" name="degree" id="High-school" Value="High-school">
+				<input type="radio" name="degree" id="Associates" Value="Associates">
+
+				<br>
 				<label for="High-school">High-school</label>
+				<input type="radio" name="degree" id="High-school" Value="High-school">
+
 		</fieldset>
 		<br><br>
 		<input type="submit" name="submit" value="Apply to Idiotville">
