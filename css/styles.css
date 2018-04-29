@@ -239,6 +239,29 @@ a.button {
 	border-radius: 5px;
 }
 
+input.button {
+	cursor: pointer;
+  font: bold 32px;
+	font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  background-color: #04f;
+  color: white;
+  padding: 6px;
+	border-radius: 5px;
+}
+
+input.button#reset {
+	cursor: pointer;
+  font: bold 32px;
+	font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  background-color: white;
+  color: #04f;
+  padding: 6px;
+	margin-top: 18px;
+	border-radius: 5px;
+}
+
 
 /* FORM STYLING */
 input, textarea, select, button {
