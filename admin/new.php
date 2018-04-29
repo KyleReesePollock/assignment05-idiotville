@@ -25,9 +25,14 @@ function renderForm($first, $last, $error)
 <html>
 
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0">
 
 <title>New Record</title>
-
+<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<?php
+	include "includes/nav.inc";
+	?>
 </head>
 
 <body>
