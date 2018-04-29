@@ -75,7 +75,7 @@ header{
 }
 
 h2{
-	font-family: 'Roboto';
+	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	font-size: 20pt;
 }
@@ -85,7 +85,7 @@ body{
 	margin-top: 98px;
 	background: rgba(135,134,135,1);
 	color: white;
-	font-family: 'Roboto';
+	font-family: 'Roboto', sans-serif;
 }
 
 section{
@@ -228,7 +228,7 @@ img#puzzle-pic {
 
 a.button {
   font: bold 128px;
-	font-family: 'Roboto';
+	font-family: 'Roboto', sans-serif;
   text-decoration: none;
 	float: right;
   background-color: #04f;
