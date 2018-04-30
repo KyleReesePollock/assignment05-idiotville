@@ -69,10 +69,13 @@ There will be two tables in the database to capture all the relevant information
 
 ### Suggested Page Layout for Team 
 ![alt team](https://github.com/kurthaut/assignment05-idiotville/blob/master/team.png)
-I think something like this would be really nice. Obvously, our pictures would go in place of this mock-up, however, this captures the idea that we are going for here.
+
+I think something like this would be really nice. Obvously, our pictures would go in place of this mock-up, however, this captures the idea that we are going for here. Also, we would have three side by side ideally this is meant to capture that idea.
 
 ### Suggested Design of Application [form to capture relevant data]
-![alt form]()
+![alt form](https://github.com/kurthaut/assignment05-idiotville/blob/master/form.png)
+
+I think something along these lines would make sense. It does not have to be anything fancy, in fact less fancy is better given the atmosphere we are trying to create.
 
 ### Intended Design [Suggested Fonts]
 In terms of fonts, please choose something that follows with creating a mood that is attractive for our potential employees that we are targeting (attract young, hip collegiate students)
