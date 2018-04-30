@@ -63,9 +63,16 @@ There will be two tables in the database to capture all the relevant information
 2. Table 2 [Applying to work for us]
 ..* Must capture and store the application data. See previous sections for details on what needs to be captured
 
-### Wireframe for Intended Website 
+### Wireframe for Intended Website [Homepage]
 ![alt wireframe](https://github.com/kurthaut/assignment05-idiotville/blob/master/Wireframe.png)
 
 
-### Intended Design
-The wire frame says it all, however, in terms of fonts please choose something that follows with creating a mood that is attractive for our potential employees that we are targeting (attract young, hip collegiate students)
+### Suggested Page Layout for Team 
+
+### Suggested Design of Application
+
+### Intended Design [Suggested Fonts]
+In terms of fonts, please choose something that follows with creating a mood that is attractive for our potential employees that we are targeting (attract young, hip collegiate students)
+
+### Proof of Collaboration
+See slack, we had a DM thread going as well as a collaborative google doc. We switched over to messenger for quick modifications because we ended up being more comfortable with that :p.
