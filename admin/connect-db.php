@@ -1,6 +1,6 @@
 <?php
 
-$server = '66.147.242.186';
+$server = 'localhost';
 
 $user = 'urcscon3_jhirs10';
 
