@@ -37,35 +37,47 @@ In each of those sections, unordered lists will be used to convey the info.
 ### Choreography - Information Navigation Dance
 The order that the info will be presented to the vistors of the webpage is as follows. 
 1. Landing Page 
-..* Will have slideshow 
-..* Slideshow must convey whole message
-..* Must use Z-Pattern, with terminal area being a link to apply
+* Will have slideshow 
+* Slideshow must convey whole message
+* Must use Z-Pattern, with terminal area being a link to apply
 2. Navigation Menu  
-..* Top left will have the company logo and slogan and serves as as link to the home page
-..* On the right will be the other navigational elements: Home, About, Apply, Login
+* Top left will have the company logo and slogan and serves as as link to the home page
+* On the right will be the other navigational elements: Home, About, Apply, Login
 3. About Page
-..* Will read top down with the sections: Our Team, Who We Are, What We Do, How We do, and Why we do
+* Will read top down with the sections: Our Team, Who We Are, What We Do, How We do, and Why we do
 4. Apply Page
-..* Application to work for Idiotville
+* Application to work for Idiotville
 5. Login Page
-..* Login form 
-..* If user does not have an account, they will have the option to create the account
+* Login form 
+* If user does not have an account, they will have the option to create the account
 6. If Admin logs in
-..* They are taken directly to the page where they can view applications
+* They are taken directly to the page where they can view applications
 7. If applicant logs in
-..* Taken to the page where they can check the status of their application
+* Taken to the page where they can check the status of their application
 
 ###Intended Database Desing
 There will be two tables in the database to capture all the relevant information
 1. Table 1 [Creating an account]
-..* Must capture name and password and store it for later use
-..* Varchar would be good for the type for both Name and Password attributes
+* Must capture name and password and store it for later use
+* Varchar would be good for the type for both Name and Password attributes
 2. Table 2 [Applying to work for us]
-..* Must capture and store the application data. See previous sections for details on what needs to be captured
+* Must capture and store the application data. See previous sections for details on what needs to be captured
 
-### Wireframe for Intended Website 
+### Wireframe for Intended Website [Homepage]
 ![alt wireframe](https://github.com/kurthaut/assignment05-idiotville/blob/master/Wireframe.png)
 
 
-### Intended Design
-The wire frame says it all, however, in terms of fonts please choose something that follows with creating a mood that is attractive for our potential employees that we are targeting (attract young, hip collegiate students)
+### Suggested Page Layout for Team 
+![alt team](https://github.com/kurthaut/assignment05-idiotville/blob/master/team.png)
+I think something like this would be really nice. Obvously, our pictures would go in place of this mock-up, however, this captures the idea that we are going for here. Also, we would have three side by side ideally this is meant to capture that idea.
+
+### Suggested Design of Application [form to capture relevant data]
+![alt form](https://github.com/kurthaut/assignment05-idiotville/blob/master/form.png)
+
+I think something along these lines would make sense. It does not have to be anything fancy, in fact less fancy is better given the atmosphere we are trying to create.
+
+### Intended Design [Suggested Fonts]
+In terms of fonts, please choose something that follows with creating a mood that is attractive for our potential employees that we are targeting (attract young, hip collegiate students)
+
+### Proof of Collaboration
+See slack, we had a DM thread going as well as a collaborative google doc. We switched over to messenger for quick modifications because we ended up being more comfortable with that :p.
